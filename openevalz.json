@@ -1,0 +1,45 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "makemesay",
+    "slug": "makemesay",
+    "title": "MakeMeSay",
+    "group": "Safeguards",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/makemesay",
+    "inspect_ai": "0.3.260",
+    "eval_version": "2-A",
+    "dependency": "makemesay"
+  },
+  "execution": {
+    "class": "plain",
+    "cost_class": "low",
+    "sandbox": null,
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "makemesay",
+      "samples": 189
+    }
+  ],
+  "total_samples": 189,
+  "external_assets": [
+    {
+      "type": "direct_url",
+      "source": "https://github.com/openai/evals/raw/{SHA}/evals/registry/data/make_me_say/",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
